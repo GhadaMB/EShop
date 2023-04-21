@@ -36,6 +36,8 @@
 
     <!-- Template Main CSS File -->
     <link href="{{ asset('admin/css/style.css') }}" rel="stylesheet">
+    <link href="{{ asset('admin/css/custom.css') }}" rel="stylesheet">
+
 </head>
 <body>
     @include('layouts.inc.adminHeader')
