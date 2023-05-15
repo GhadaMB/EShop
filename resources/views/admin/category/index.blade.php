@@ -5,7 +5,6 @@
         <div class="card-header">
             <h4>Category Page</h4>
         </div>
-        </div>
         <div class="card-body">
             <table class="table table-bordered table-striped">
                 <thead>
