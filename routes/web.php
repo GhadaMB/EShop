@@ -23,11 +23,14 @@ use App\Http\Controllers\Frontend\FrontendController;
 
 Route::get('/',[FrontendController::class, 'index']);
 Route::get('category', [FrontendController::class, 'category']);
+Route::get('view-category/{slug}', [FrontendController::class, 'viewCategory']);
 
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
+
+// Admin Dashboard Routes
 Route::middleware(['auth', 'isAdmin'])->group( function() {
     Route::get('/dashboard', 'Admin\FrontendController@index');
 
