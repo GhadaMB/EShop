@@ -25,6 +25,9 @@
     <link href="{{ asset('frontend/css/custom.css') }}" rel="stylesheet">
     <link href="{{ asset('frontend/css/bootstrap5.css') }}" rel="stylesheet">
 
+    <link href="{{ asset('frontend/css/owl.carousel.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('frontend/css/owl.theme.default.min.css') }}" rel="stylesheet">
+
     <!-- Fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -47,6 +50,9 @@
 </main><!-- End #main -->
 
 <!-- Template Main JS File -->
+<script src="{{ asset('frontend/js/jquery-3.7.0.min.js') }}"></script>
+<script src="{{ asset('frontend/js/owl.carousel.js') }}"></script>
+
 <script src="{{ asset('frontend/js/bootstrap.bundle.min.js') }}"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
