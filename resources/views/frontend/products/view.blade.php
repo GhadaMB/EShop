@@ -5,7 +5,7 @@
 @section('content')
     <div class="py-3 mb-4 shadow-sm bg-warning border-top">
         <div class="container">
-            <h6 class="mb-0">collections / {{ $product->category->name }} / {{ $product->name }}</h6>
+            <h6 class="mb-0">collections / <a class="cat_link" href="{{ url('view-category/'. $product->category->slug) }}">{{ $product->category->name }}</a> / {{ $product->name }}</h6>
         </div>
     </div>
 

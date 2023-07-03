@@ -29,9 +29,7 @@ Route::get('category/{cate_slug}/{prod_slug}', [FrontendController::class, 'view
 
 Auth::routes();
 
-Route::middleware(['auth'])->group(function () {
-   Route::post('add-to-cart', [CartController::class, 'addProduct']);
-});
+Route::post('add-to-cart', [CartController::class, 'addProduct']);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
