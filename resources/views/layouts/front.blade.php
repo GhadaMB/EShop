@@ -54,6 +54,7 @@
 <!-- Template Main JS File -->
 <script src="{{ asset('frontend/js/jquery-3.7.0.min.js') }}"></script>
 <script src="{{ asset('frontend/js/owl.carousel.js') }}"></script>
+<script src="{{ asset('frontend/js/custom.js') }}"></script>
 
 <script src="{{ asset('frontend/js/bootstrap.bundle.min.js') }}"></script>
 

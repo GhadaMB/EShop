@@ -13,14 +13,16 @@
                 <div class="owl-carousel owl-theme featured-carousel">
                     @foreach($featured_products as $product)
                         <div class="item">
-                            <div class="card">
-                                <img src="{{ asset('assets/uploads/products/'. $product->image) }}" alt="Product Image">
-                                <div class="card-body">
-                                    <h5>{{ $product->name }}</h5>
-                                    <span class="float-start">{{ $product->selling_price }}</span>
-                                    <span class="float-end"><s>{{ $product->original_price }}</s></span>
+                            <a href="{{ url('category/'. $product->category->slug . '/' . $product->slug) }}">
+                                <div class="card">
+                                    <img src="{{ asset('assets/uploads/products/'. $product->image) }}" alt="Product Image">
+                                    <div class="card-body">
+                                        <h5>{{ $product->name }}</h5>
+                                        <span class="float-start">{{ $product->selling_price }}</span>
+                                        <span class="float-end"><s>{{ $product->original_price }}</s></span>
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     @endforeach
                 </div>
