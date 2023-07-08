@@ -56,9 +56,11 @@
                                     <button class="input-group-text increment-btn">+</button>
                                 </div>
                             </div>
-                            <div class="col-md-10">
+                            <div class="col-md-9">
                                 <br/>
-                                <button type="button" class="btn btn-primary me-3 float-start addToCartBtn">Add To Cart <i class="fa fa-shopping-cart"></i></button>
+                                @if($product->qty > 0)
+                                    <button type="button" class="btn btn-primary me-3 float-start addToCartBtn">Add To Cart <i class="fa fa-shopping-cart"></i></button>
+                                @endif
                                 <button type="button" class="btn btn-success me-3 float-start">Add To Wishlist <i class="fa fa-heart"></i></button>
                             </div>
                         </div>
